@@ -1,178 +1,184 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constructora Gómez | Transformación Digital</title>
+    <title>Constructora Gómez - Transformación Digital</title>
+    <!-- Tailwind CSS para Estilos Adaptivos Eficientes (IL1) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <span class="text-2xl font-black tracking-wider text-blue-900">WARDIRE.INC</span>
-                <span class="text-xs bg-amber-500 text-white px-2 py-0.5 rounded font-bold">GÓMEZ</span>
+    <!-- 1. NAVEGACIÓN (Navbar) -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-blue-900">Constructora Gómez</a>
+            <div class="space-x-6">
+                <a href="#nosotros" class="hover:text-blue-600 transition">Nosotros</a>
+                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+                <a href="#portafolio" class="hover:text-blue-600 transition">Portafolio</a>
+                <a href="#contacto" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition">Cotizar</a>
             </div>
-            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
-                <a href="#inicio" class="hover:text-blue-700 transition-colors">Inicio</a>
-                <a href="#nosotros" class="hover:text-blue-700 transition-colors">Nosotros</a>
-                <a href="#servicios" class="hover:text-blue-700 transition-colors">Servicios</a>
-                <a href="#portafolio" class="hover:text-blue-700 transition-colors">Portafolio</a>
-                <a href="#contacto" class="bg-blue-700 text-white px-5 py-2.5 rounded-lg hover:bg-blue-800 transition-all shadow-md shadow-blue-700/20">Cotizar Obra</a>
-            </nav>
-        </div>
+        </nav>
     </header>
 
-    <section id="inicio" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-amber-400 font-bold tracking-widest uppercase text-sm block">Transformación Digital</span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-                    Proyectos web para la <span class="text-blue-400">Constructora Gómez</span>
-                </h1>
-                <p class="text-slate-300 text-lg sm:text-xl max-w-xl">
-                    Modernizamos la captación de clientes y la gestión de infraestructura mediante plataformas web de alta ingeniería y eficiencia.
-                </p>
-                <div class="pt-4 flex flex-wrap gap-4">
-                    <a href="#contacto" class="bg-amber-500 text-slate-950 font-bold px-8 py-3.5 rounded-lg hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20">Iniciar Cotización</a>
-                    <a href="#portafolio" class="border border-slate-700 bg-slate-900/50 text-white px-8 py-3.5 rounded-lg hover:bg-slate-800 transition-all">Ver Obras</a>
-                </div>
+    <!-- 2. INICIO (Hero Section) -->
+    <section class="pt-32 pb-20 bg-gradient-to-r invert-0 bg-blue-900 text-white text-center px-4">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Ingeniería y Calidad en Construcción</h1>
+            <p class="text-lg mb-8 text-blue-100">Transformamos ideas en obras emblemáticas con los más altos estándares técnicos.</p>
+            <!-- Botón de Acción Principal a Contacto -->
+            <a href="#contacto" class="bg-yellow-500 text-blue-950 font-bold px-8 py-3 rounded-lg text-lg shadow-lg hover:bg-yellow-400 transition inline-block">
+                Iniciar Cotización
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. NOSOTROS -->
+    <section id="nosotros" class="py-20 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Nosotros</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="text-gray-600 leading-relaxed mb-4">En Constructora Gómez combinamos la experiencia de la ingeniería tradicional con las herramientas tecnológicas modernas para ejecutar obras civiles y residenciales con precisión matemática y seguridad garantizada.</p>
             </div>
-            <div class="relative hidden md:block">
-                <div class="aspect-square bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
-                    <div class="w-full h-full bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_1px] flex items-center justify-center text-slate-500 font-mono text-sm">
-                        [ Visualización Estructura Arquitectónica ]
-                    </div>
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                <h3 class="font-bold text-blue-900 mb-2">Nuestros Pilares Administrativos:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Garantía de Confidencialidad y Seguridad (IL2)</li>
+                    <li>Eficiencia Técnica y Código Semántico (IL1)</li>
+                    <li>Sincronización Cloud Omnicanal (IL4)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICIOS -->
+    <section id="servicios" class="py-20 bg-gray-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2 text-blue-900">Diseño y Planificación</h3>
+                    <p class="text-gray-600">Modelado digital y optimización de presupuestos antes de la construcción.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2 text-blue-900">Obras Residenciales</h3>
+                    <p class="text-gray-600">Construcción de viviendas modernas con materiales de alta durabilidad.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-bold text-xl mb-2 text-blue-900">Infraestructura Comercial</h3>
+                    <p class="text-gray-600">Edificaciones complejas adaptadas a las normativas comerciales vigentes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-20 md:py-28 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">¿Quiénes Somos?</h2>
-                <div class="h-1 w-20 bg-blue-700 mx-auto rounded"></div>
-                <p class="text-slate-600 text-lg">
-                    Constructora Gómez es una empresa líder dedicada a transformar espacios mediante proyectos residenciales, comerciales y de ingeniería civil de gran envergadura.
-                </p>
+    <!-- 5. PORTAFOLIO (Con Botones de Filtro 100% Funcionales) -->
+    <section id="portafolio" class="py-20 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-4">Nuestro Portafolio</h2>
+        <p class="text-center text-gray-600 mb-8">Filtre las obras según la categoría de su interés.</p>
+        
+        <!-- Barra de Botones de Filtro -->
+        <div class="flex justify-center space-x-4 mb-12">
+            <button class="btn-filtro bg-blue-900 text-white px-5 py-2 rounded-full text-sm font-semibold cursor-pointer" data-filter="todos">Todos</button>
+            <button class="btn-filtro bg-gray-200 text-gray-700 hover:bg-gray-300 px-5 py-2 rounded-full text-sm font-semibold cursor-pointer" data-filter="residencial">Residencial</button>
+            <button class="btn-filtro bg-gray-200 text-gray-700 hover:bg-gray-300 px-5 py-2 rounded-full text-sm font-semibold cursor-pointer" data-filter="comercial">Comercial</button>
+        </div>
+
+        <!-- Tarjetas de Proyectos -->
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="proyecto-card residencial bg-white rounded-xl shadow overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-green-600 uppercase">Residencial</span>
+                    <h3 class="font-bold text-xl mt-1">Condominio El Sol</h3>
+                    <p class="text-gray-600 text-sm mt-2">Complejo multifamiliar de 12 pisos optimizado bioclimáticamente.</p>
+                </div>
             </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 font-bold text-xl mb-4 group-hover:bg-blue-700 group-hover:text-white transition-all">01</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Planificación de Obras</h3>
-                    <p class="text-slate-600 text-sm">Modelado, presupuestos exactos y control técnico de hitos constructivos.</p>
+            <div class="proyecto-card comercial bg-white rounded-xl shadow overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-blue-600 uppercase">Comercial</span>
+                    <h3 class="font-bold text-xl mt-1">Centro Empresarial G&amp;M</h3>
+                    <p class="text-gray-600 text-sm mt-2">Estructura corporativa con certificación de alta eficiencia energética.</p>
                 </div>
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 font-bold text-xl mb-4 group-hover:bg-blue-700 group-hover:text-white transition-all">02</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Diseño de Proyectos</h3>
-                    <p class="text-slate-600 text-sm">Planos estructurales, arquitectura moderna y optimización del entorno.</p>
-                </div>
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 font-bold text-xl mb-4 group-hover:bg-blue-700 group-hover:text-white transition-all">03</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Ejecución de Construcciones</h3>
-                    <p class="text-slate-600 text-sm">Edificación segura aplicando estrictos estándares internacionales de ingeniería.</p>
-                </div>
-                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 font-bold text-xl mb-4 group-hover:bg-blue-700 group-hover:text-white transition-all">04</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Gestión de Infraestructura</h3>
-                    <p class="text-slate-600 text-sm">Mantenimiento técnico, auditorías estructurales y supervisión post-obra.</p>
+            </div>
+            <div class="proyecto-card residencial bg-white rounded-xl shadow overflow-hidden border border-gray-100">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-green-600 uppercase">Residencial</span>
+                    <h3 class="font-bold text-xl mt-1">Residencial Las Acacias</h3>
+                    <p class="text-gray-600 text-sm mt-2">Casas unifamiliares con acabados de primera y diseño de vanguardia.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-4 mb-12">
-                <h2 class="text-3xl font-bold tracking-tight">Solicitud de Cotización Tecnológica</h2>
-                <p class="text-slate-400">Ingrese los datos de su requerimiento. Toda la información es procesada de forma segura mediante cifrado SSL (Políticas IL2).</p>
-            </div>
+    <!-- 6. CONTACTO Y COTIZACIÓN (Formulario e Integración) -->
+    <section id="contacto" class="py-20 bg-gray-900 text-white px-4">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-yellow-500 mb-4">Cotice su Proyecto</h2>
+            <p class="text-center text-gray-400 mb-8">Introduzca la información técnica requerida de forma confidencial (IL2).</p>
             
-            <form id="form-cotizacion" class="bg-slate-800 p-8 rounded-2xl border border-slate-700/60 shadow-xl space-y-6" novalidate>
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div>
-                        <label for="nombre" class="block text-sm font-medium text-slate-300 mb-2">Nombre Completo *</label>
-                        <input type="text" id="nombre" name="nombre" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors">
-                        <span class="error-msg text-xs text-red-400 mt-1 hidden">Este campo es requerido.</span>
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Correo Electrónico Corporativo *</label>
-                        <input type="email" id="email" name="email" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors">
-                        <span class="error-msg text-xs text-red-400 mt-1 hidden">Ingrese un correo válido.</span>
-                    </div>
-                </div>
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div>
-                        <label for="telefono" class="block text-sm font-medium text-slate-300 mb-2">Teléfono de Contacto *</label>
-                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9,}" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors">
-                        <span class="error-msg text-xs text-red-400 mt-1 hidden">Ingrese un teléfono válido (mínimo 9 dígitos).</span>
-                    </div>
-                    <div>
-                        <label for="tipo_proyecto" class="block text-sm font-medium text-slate-300 mb-2">Tipo de Proyecto *</label>
-                        <select id="tipo_proyecto" name="tipo_proyecto" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors">
-                            <option value="">Seleccione una opción...</option>
-                            <option value="residencial">Edificación Residencial</option>
-                            <option value="comercial">Infraestructura Comercial</option>
-                            <option value="obras_civiles">Obras de Ingeniería Civil</option>
-                        </select>
-                        <span class="error-msg text-xs text-red-400 mt-1 hidden">Seleccione un tipo de proyecto.</span>
-                    </div>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Nombre Completo *</label>
+                    <input type="text" id="nombre" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-500 text-white" placeholder="Ej: Juan Pérez">
                 </div>
                 <div>
-                    <label for="mensaje" class="block text-sm font-medium text-slate-300 mb-2">Detalles y Especificaciones del Proyecto</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"></textarea>
+                    <label class="block text-sm font-medium mb-1">Correo Electrónico *</label>
+                    <input type="email" id="email" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-500 text-white" placeholder="juan@empresa.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Teléfono Móvil *</label>
+                    <input type="tel" id="telefono" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-500 text-white" placeholder="987654321">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Tipo de Obra *</label>
+                    <select id="tipo-proyecto" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-500 text-white">
+                        <option value="">Seleccione una opción</option>
+                        <option value="residencial">Obra Residencial</option>
+                        <option value="comercial">Infraestructura Comercial</option>
+                        <option value="civil">Obras Civiles Especiales</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Detalles Adicionales</label>
+                    <textarea id="mensaje" rows="4" class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:border-yellow-500 text-white" placeholder="Describa brevemente los requerimientos técnicos..."></textarea>
                 </div>
                 
-                <div class="flex items-start gap-3">
-                    <input type="checkbox" id="privacidad" name="privacidad" required class="mt-1 accent-blue-500">
-                    <label for="privacidad" class="text-xs text-slate-400">Acepto la política de protección de datos personales de Constructora Gómez, garantizando la confidencialidad de la información brindada.</label>
-                </div>
-
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-lg transition-all shadow-lg shadow-blue-600/20 tracking-wide cursor-pointer">
-                    Enviar Solicitud de Cotización
+                <button type="submit" class="w-full bg-yellow-500 text-blue-950 font-bold py-3 rounded hover:bg-yellow-400 transition cursor-pointer">
+                    Enviar Cotización Seguro
                 </button>
             </form>
         </div>
     </section>
 
-    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-        <div id="chatbot-window" class="w-80 sm:w-96 h-[450px] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden hidden transition-all duration-300 mb-4">
-            <div class="bg-blue-900 text-white p-4 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></div>
-                    <span class="font-bold text-sm">Asistente Constructora Gómez</span>
-                </div>
-                <button id="close-chat" class="text-slate-400 hover:text-white transition-colors cursor-pointer">&times;</button>
+    <!-- 7. CHATBOT AUTOMATIZADO FLOTANTE -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <!-- Botón Circular para Abrir/Cerrar Chat -->
+        <button id="btn-open-chat" class="bg-blue-600 hover:bg-blue-500 text-white p-4 rounded-full shadow-2xl transition cursor-pointer flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+        </button>
+
+        <!-- Contenedor del Chat (Oculto al inicio con 'hidden') -->
+        <div id="chat-box" class="hidden bg-white w-80 h-96 rounded-2xl shadow-2xl border border-gray-200 flex flex-col absolute bottom-16 right-0 overflow-hidden">
+            <div class="bg-blue-900 text-white p-4 font-bold flex justify-between items-center">
+                <span>Asistente Técnico Gómez</span>
+                <span class="text-xs text-blue-300">● En línea</span>
             </div>
-            <div id="chatbot-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-xs sm:text-sm bg-slate-50">
-                <div class="bg-slate-200 text-slate-800 p-3 rounded-xl rounded-tl-none max-w-[85%]">
-                    ¡Hola! Bienvenido a la mesa digital de Constructora Gómez. ¿En qué tipo de obra está interesado?
+            <div class="flex-1 p-4 overflow-y-auto space-y-3 bg-gray-50 text-sm">
+                <div class="bg-blue-100 text-blue-900 p-3 rounded-lg rounded-tl-none max-w-[85%]">
+                    ¡Hola! Bienvenido a Constructora Gómez. ¿Deseas agilizar un presupuesto técnico o hablar con un ingeniero?
                 </div>
             </div>
-            <div class="p-3 border-t bg-white flex gap-2">
-                <input type="text" id="chat-input" placeholder="Escriba su consulta aquí..." class="flex-1 bg-slate-100 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
-                <button id="send-chat" class="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-blue-800 cursor-pointer">Enviar</button>
+            <div class="p-3 border-t bg-white flex space-x-2">
+                <input type="text" placeholder="Escriba su consulta..." class="flex-1 border rounded px-3 py-1.5 text-xs focus:outline-none focus:border-blue-600">
+                <button class="bg-blue-900 text-white px-3 py-1.5 rounded text-xs hover:bg-blue-800 transition">Enviar</button>
             </div>
         </div>
-        <button id="chatbot-toggle" class="w-14 h-14 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center text-white shadow-xl transition-all hover:scale-105 cursor-pointer">
-            💬
-        </button>
     </div>
 
-    <footer class="bg-slate-950 text-slate-500 text-xs sm:text-sm py-8 border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>&copy; 2026 WARDIRE.INC / Constructora Gómez. Todos los derechos reservados.</p>
-            <!-- En tu index.html dentro de la sección <footer> -->
-            <div class="flex gap-6">
-                <a href="#contacto" class="hover:text-slate-300 transition-colors">Políticas de Seguridad Organizacional</a>
-                <a href="#contacto" class="hover:text-slate-300 transition-colors">Aviso de Privacidad (Ley de Protección de Datos)</a>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Vínculo al archivo JavaScript de Comportamiento -->
     <script src="app.js"></script>
 </body>
 </html>
