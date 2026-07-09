@@ -1,0 +1,10 @@
+/* Buenas Prácticas de Estilos */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Manejo de errores visuales en campos no válidos */
+input.invalid, select.invalid {
+    border-color: #f87171 !important;
+    background-color: #450a0a !important;
+}
